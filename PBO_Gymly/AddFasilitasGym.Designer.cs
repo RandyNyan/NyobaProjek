@@ -31,6 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFasilitasGym));
             ButtonCancel = new Button();
             ButtonAdd = new Button();
+            TextBoxJumlahFasilitas = new TextBox();
+            TextBoxNamaFasilitas = new TextBox();
+            Label_JumlahFasilitas = new Label();
+            Label_NamaFasilitas = new Label();
             SuspendLayout();
             // 
             // ButtonCancel
@@ -63,22 +67,77 @@
             ButtonAdd.UseVisualStyleBackColor = true;
             ButtonAdd.Click += ButtonAdd_Click;
             // 
+            // TextBoxJumlahFasilitas
+            // 
+            TextBoxJumlahFasilitas.BackColor = Color.FromArgb(109, 106, 117);
+            TextBoxJumlahFasilitas.BorderStyle = BorderStyle.None;
+            TextBoxJumlahFasilitas.Font = new Font("Segoe UI Semibold", 13F, FontStyle.Bold);
+            TextBoxJumlahFasilitas.ForeColor = Color.FromArgb(249, 249, 249);
+            TextBoxJumlahFasilitas.Location = new Point(42, 242);
+            TextBoxJumlahFasilitas.Name = "TextBoxJumlahFasilitas";
+            TextBoxJumlahFasilitas.Size = new Size(250, 24);
+            TextBoxJumlahFasilitas.TabIndex = 7;
+            // 
+            // TextBoxNamaFasilitas
+            // 
+            TextBoxNamaFasilitas.BackColor = Color.FromArgb(109, 106, 117);
+            TextBoxNamaFasilitas.BorderStyle = BorderStyle.None;
+            TextBoxNamaFasilitas.Font = new Font("Segoe UI Semibold", 13F, FontStyle.Bold);
+            TextBoxNamaFasilitas.ForeColor = Color.FromArgb(249, 249, 249);
+            TextBoxNamaFasilitas.Location = new Point(42, 161);
+            TextBoxNamaFasilitas.Name = "TextBoxNamaFasilitas";
+            TextBoxNamaFasilitas.Size = new Size(250, 24);
+            TextBoxNamaFasilitas.TabIndex = 6;
+            // 
+            // Label_JumlahFasilitas
+            // 
+            Label_JumlahFasilitas.AutoSize = true;
+            Label_JumlahFasilitas.BackColor = Color.Transparent;
+            Label_JumlahFasilitas.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold);
+            Label_JumlahFasilitas.ForeColor = Color.FromArgb(249, 249, 249);
+            Label_JumlahFasilitas.Location = new Point(35, 209);
+            Label_JumlahFasilitas.Name = "Label_JumlahFasilitas";
+            Label_JumlahFasilitas.Size = new Size(152, 28);
+            Label_JumlahFasilitas.TabIndex = 5;
+            Label_JumlahFasilitas.Text = "Jumlah Fasilitas";
+            // 
+            // Label_NamaFasilitas
+            // 
+            Label_NamaFasilitas.AutoSize = true;
+            Label_NamaFasilitas.BackColor = Color.Transparent;
+            Label_NamaFasilitas.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold);
+            Label_NamaFasilitas.ForeColor = Color.FromArgb(249, 249, 249);
+            Label_NamaFasilitas.Location = new Point(35, 128);
+            Label_NamaFasilitas.Name = "Label_NamaFasilitas";
+            Label_NamaFasilitas.Size = new Size(140, 28);
+            Label_NamaFasilitas.TabIndex = 4;
+            Label_NamaFasilitas.Text = "Nama Fasilitas";
+            // 
             // AddFasilitasGym
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(400, 450);
+            Controls.Add(TextBoxJumlahFasilitas);
+            Controls.Add(TextBoxNamaFasilitas);
+            Controls.Add(Label_JumlahFasilitas);
+            Controls.Add(Label_NamaFasilitas);
             Controls.Add(ButtonAdd);
             Controls.Add(ButtonCancel);
             Name = "AddFasilitasGym";
             Text = "AddFasilitasGym";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button ButtonCancel;
         private Button ButtonAdd;
+        private TextBox TextBoxJumlahFasilitas;
+        private TextBox TextBoxNamaFasilitas;
+        private Label Label_JumlahFasilitas;
+        private Label Label_NamaFasilitas;
     }
 }

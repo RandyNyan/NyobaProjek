@@ -4,6 +4,12 @@
     <Compile Update="AddFasilitasGym.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ChangeFasilitasGym.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DeleteFasilitasGym.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FasilitasGym.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -49,7 +49,7 @@ namespace PBO_Gymly
 
             try
             {
-                DataTable result = Database_Gym.queryExecutor(query, parameters);
+                DataTable result = Database_FasilitasGym.queryExecutor(query, parameters);
                 int userCount = Convert.ToInt32(result.Rows[0][0]);
                 return userCount > 0;
             }
